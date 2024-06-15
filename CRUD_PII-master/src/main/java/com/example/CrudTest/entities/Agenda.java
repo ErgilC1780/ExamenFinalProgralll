@@ -11,7 +11,7 @@ import lombok.Setter;
 
 import java.util.Date;
 
-//Paso 1
+
 @Entity
 @Table(name = "product")
 @Getter
@@ -19,7 +19,7 @@ import java.util.Date;
 public class Agenda {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)//autoincremental
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @NotBlank(message = "No puede estar vacio")
@@ -31,7 +31,7 @@ public class Agenda {
     private Integer price;
 
     @Column(name ="created_at")
-    @Temporal(TemporalType.DATE) //espesificar que es tipo fecha
+    @Temporal(TemporalType.DATE)
     private Date createdAt;
 
 }

@@ -1,0 +1,1 @@
+insert into product (name,  price, created_at) values ('frijol', 11, NOW());
